@@ -1,10 +1,10 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lusty-store-mysql"
-version = "0.3-1"
+version = "0.3-2"
 -- LuaDist source
 source = {
-  tag = "0.3-1",
+  tag = "0.3-2",
   url = "git://github.com/LuaDist-testing/lusty-store-mysql.git"
 }
 -- Original source
@@ -29,8 +29,11 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["lusty-store-mysql.store.mysql.connection"]= "lusty-store-mysql/store/mysql/connection.lua",
     ["lusty-store-mysql.store.mysql.get"]       = "lusty-store-mysql/store/mysql/get.lua",
+    ["lusty-store-mysql.store.mysql.post"]      = "lusty-store-mysql/store/mysql/post.lua",
+    ["lusty-store-mysql.store.mysql.patch"]     = "lusty-store-mysql/store/mysql/patch.lua",
+    ["lusty-store-mysql.store.mysql.delete"]    = "lusty-store-mysql/store/mysql/delete.lua",
+    ["lusty-store-mysql.store.mysql.connection"]= "lusty-store-mysql/store/mysql/connection.lua",
     ["lusty-store-mysql.store.mysql"]           = "lusty-store-mysql/store/mysql.lua",
     ["lusty-store-mysql.query"]                 = "lusty-store-mysql/query.lua"
   }

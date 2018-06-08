@@ -11,11 +11,11 @@ return {
     else
       q = context.query
     end
-    q = "SELECT "..(m.fields and table.concat(m.fields, ", ") or "*").." FROM "..config.collection..(#q>0 and " WHERE "..q or "")..";"
+    q = "DELETE FROM "..config.collection.." WHERE "..q..";"
     local results = {}
     local res, err, errno, sqlstate = db:query(q)
     if not res then
-      error("Query |"..q.."| failed: "..err)
+      return nil, "Query |"..q.."| failed: "..err
     end
     return res
   end

@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lusty-store-mysql"
-version = "0.1-0"
+version = "0.2-1"
 -- LuaDist source
 source = {
-  tag = "0.1-0",
+  tag = "0.2-1",
   url = "git://github.com/LuaDist-testing/lusty-store-mysql.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/Olivine-Labs/lusty-store-mysql/archive/v0.1.tar.gz",
---   dir = "lusty-store-mysql-0.1"
+--   url = "https://github.com/Olivine-Labs/lusty-store-mysql/archive/v0.2.tar.gz",
+--   dir = "lusty-store-mysql-0.2"
 -- }
 description = {
   summary = "MySQL plugin for lusty persistence interface.",
@@ -29,9 +29,9 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["lusty-store-mysql.store.mysql.connection"]= "src/store/mysql/connection.lua",
-    ["lusty-store-mysql.store.mysql.get"]       = "src/store/mysql/get.lua",
-    ["lusty-store-mysql.store.mysql"]           = "src/store/mysql.lua",
-    ["lusty-store-mysql.query"]                 = "src/query.lua"
+    ["lusty-store-mysql.store.mysql.connection"]= "lusty-store-mysql/store/mysql/connection.lua",
+    ["lusty-store-mysql.store.mysql.get"]       = "lusty-store-mysql/store/mysql/get.lua",
+    ["lusty-store-mysql.store.mysql"]           = "lusty-store-mysql/store/mysql.lua",
+    ["lusty-store-mysql.query"]                 = "lusty-store-mysql/query.lua"
   }
 }

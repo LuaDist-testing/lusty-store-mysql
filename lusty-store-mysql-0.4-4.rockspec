@@ -1,9 +1,17 @@
+-- This file was automatically generated for the LuaDist project.
+
 package = "lusty-store-mysql"
 version = "0.4-4"
+-- LuaDist source
 source = {
-  url = "https://github.com/Olivine-Labs/lusty-store-mysql/archive/v0.4.tar.gz",
-  dir = "lusty-store-mysql-0.4"
+  tag = "0.4-4",
+  url = "git://github.com/LuaDist-testing/lusty-store-mysql.git"
 }
+-- Original source
+-- source = {
+--   url = "https://github.com/Olivine-Labs/lusty-store-mysql/archive/v0.4.tar.gz",
+--   dir = "lusty-store-mysql-0.4"
+-- }
 description = {
   summary = "MySQL plugin for lusty persistence interface.",
   detailed = [[

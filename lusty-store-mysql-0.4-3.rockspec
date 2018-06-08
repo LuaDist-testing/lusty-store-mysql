@@ -1,10 +1,10 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lusty-store-mysql"
-version = "0.4-2"
+version = "0.4-3"
 -- LuaDist source
 source = {
-  tag = "0.4-2",
+  tag = "0.4-3",
   url = "git://github.com/LuaDist-testing/lusty-store-mysql.git"
 }
 -- Original source
